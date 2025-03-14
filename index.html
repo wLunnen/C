@@ -63,7 +63,7 @@
             <input type="text" id="name" name="name" required>
 
             <label for="name">Phone:</label>
-            <input type="tel" id="phone" name="phone" pattern="[1]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
 
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
@@ -75,16 +75,16 @@
             </br>
             </br>
 
-            <label for="email">Cover Letter:</label>
+            <label for="email">Letter:</label>
             <input type="file" id="letter" name="letter">
 
             <label for="email">Resume:</label>
             <input type="file" id="resume" name="resume">
 
-            <label for="message">Additional Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+            <label for="message">Notes:</label>
+            <textarea id="message" name="message" rows="5"></textarea>
 
-            <input type="submit" value="Send Message">
+            <input type="submit" value="Send">
         </form>
     </div>
 </body>
