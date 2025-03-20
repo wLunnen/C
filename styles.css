@@ -34,12 +34,12 @@ input, textarea {
     font-size: 16px;
 }
 input[type="submit"] {
-    background-color: #D73F09;
+    background-color: #65040e;
     color: #fff;
     border: none;
     cursor: pointer;
     font-size: 16px;
 }
 input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #5A030C;
 }
