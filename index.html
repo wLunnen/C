@@ -10,8 +10,9 @@
     <div class="container">
         <h2>Contact</h2>
         <form action="mailto:wesley.lunnen@gmail.com" method="post" enctype="text/plain">
-            <label for="subject">Subject:</label>
-            <input type="subject" id="subject" name="subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5"></textarea>
             
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
@@ -34,9 +35,6 @@
 
             <label for="email">Resume:</label>
             <input type="file" id="resume" name="resume">
-
-            <label for="message">Notes:</label>
-            <textarea id="message" name="message" rows="5"></textarea>
 
             <input type="submit" value="Send">
         </form>
