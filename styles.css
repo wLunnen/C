@@ -43,7 +43,3 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #5A030C;
 }
-#textarea {
-    resize: none;
-    display:block;
-}
