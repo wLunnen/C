@@ -43,3 +43,10 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #5A030C;
 }
+.switch-toggle {
+  width: 10em;
+}
+
+.switch-toggle label:not(.disabled) {
+  cursor: pointer;
+}
