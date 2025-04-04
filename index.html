@@ -13,81 +13,52 @@
         <h2>Contact</h2>
 
         <div class="container" id="professional">
+            <div class="switch-toggle switch-3 switch-candy" id="center">
+                <input id="on" name="state-d" type="radio" checked />
+                <label for="on">Essay</label>
 
-        <div class="switch-toggle switch-3 switch-candy" id="center">
-              <input id="on" name="state-d" type="radio" checked="" />
-              <label for="on" onclick="">APPLY</label>
+                <input id="na" name="state-d" type="radio" disabled />
+                <label for="na" class="disabled">&nbsp;</label>
 
-              <input id="na" name="state-d" type="radio" disabled checked="checked" />
-              <label for="na" class="disabled" onclick="">&nbsp;</label>
-
-              <input id="off" name="state-d" type="radio" />
-              <label for="off" onclick="">PERSONAL</label>
-        </div>
-        
-        <form action="mailto:wesley.lunnen@gmail.com" method="post" enctype="text/plain">
-
-            <div class="question">
-                <label for="q1">1. What are your goals with software development?</label>
-            </br>
-                <textarea id="q1" name="43" rows="4"></textarea>
-            </div>
-            </br>
-
-            <div class="question">
-                <label for="q2">2. In what ways are the projects we work on in line with the kinds of projects you want to be working on?</label>
-            </br>
-                <textarea id="q2" name="43" rows="4"></textarea>
-            </div>
-            </br>
-
-            <div class="question">
-                <label for="q3">3. Why aren't you starting your own company?</label>
-            </br>
-                <textarea id="q3" name="43" rows="4"></textarea>
-            </div>
-            </br>
-
-            <div class="question">
-                <label for="q4">4. Anything else you'd like me to know?</label>
-            </br>
-                <textarea id="q4" name="43" rows="4"></textarea>
+                <input id="off" name="state-d" type="radio" />
+                <label for="off">Code</label>
             </div>
 
-            //start of interview 2
+            <!-- Start of essay questions section -->
+            <form action="mailto:wesley.lunnen@gmail.com" method="post" enctype="text/plain">
+                <div class="question">
+                    <label for="q1">1. What are your goals with software development?</label>
+                    <textarea id="q1" name="q1" rows="4"></textarea>
+                </div>
+                <div class="question">
+                    <label for="q2">2. In what ways are the projects we work on in line with the kinds of projects you want to be working on?</label>
+                    <textarea id="q2" name="q2" rows="4"></textarea>
+                </div>
+                <div class="question">
+                    <label for="q3">3. Why aren't you starting your own company?</label>
+                    <textarea id="q3" name="q3" rows="4"></textarea>
+                </div>
+                <div class="question">
+                    <label for="q4">4. Anything else you'd like me to know?</label>
+                    <textarea id="q4" name="q4" rows="4"></textarea>
+                </div>
 
-            <div class="question">
-                <label for="q1">1. What are your goals with software development?</label>
-            </br>
-                <textarea id="q1" name="43" rows="4"></textarea>
-            </div>
-            </br>
+                <!-- Start of code challenge -->
+                <div class="question">
+                    <label for="q1code">Code out an ordered list for your grocery run this week or create a nav bar (3 items will do)</label>
+                    <textarea id="code" name="code" rows="12">
 
-            <div class="question">
-                <label for="q2">2. In what ways are the projects we work on in line with the kinds of projects you want to be working on?</label>
-            </br>
-                <textarea id="q2" name="43" rows="4"></textarea>
-            </div>
-            </br>
+                        <!-- 2 options (more personal/more professional) check for both answers before submitting their response -->
+                        
+                    </textarea>
+                </div>
 
-            <div class="question">
-                <label for="q3">3. Why aren't you starting your own company?</label>
-            </br>
-                <textarea id="q3" name="43" rows="4"></textarea>
-            </div>
-            </br>
-
-            <div class="question">
-                <label for="q4">4. Anything else you'd like me to know?</label>
-            </br>
-                <textarea id="q4" name="43" rows="4"></textarea>
-            </div>
-
-            <button href="https://www.wlunnen.github.io/C/submit.html">Next</button>
+                <!-- Redirect Button -->
+                <a href="https://wlunnen.github.io/C/post.html" class="submit-button">Next</a>
+            </form>
         </div>    
-     </form>
     </div>
+
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </body>
-    
-  <script src="https://www.google.com/recaptcha/api.js"></script>
 </html>
