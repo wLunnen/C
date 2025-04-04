@@ -8,41 +8,72 @@
     <link rel="functions" href="functions.js">
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="personal">
         <h2>Contact</h2>
         <form action="mailto:wesley.lunnen@gmail.com" method="post" enctype="text/plain">
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5"></textarea>
-            
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="name">Phone:</label>
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
+            <div class="question">
+                <label for="q1">1. What are your goals with software development?</label>
+            </br>
+                <textarea id="q1" name="43" rows="4"></textarea>
+            </div>
             </br>
 
-            <i>if applying:</i>
-
+            <div class="question">
+                <label for="q2">2. In what ways are the projects we work on in line with the kinds of projects you want to be working on?</label>
             </br>
+                <textarea id="q2" name="43" rows="4"></textarea>
+            </div>
             </br>
 
-            <label for="email">Cover Letter:</label>
-            <input type="file" id="letter" name="letter">
+            <div class="question">
+                <label for="q3">3. Why aren't you starting your own company?</label>
+            </br>
+                <textarea id="q3" name="43" rows="4"></textarea>
+            </div>
+            </br>
 
-            <label for="email">Resume:</label>
-            <input type="file" id="resume" name="resume">
+            <div class="question">
+                <label for="q4">4. Anything else you'd like me to know?</label>
+            </br>
+                <textarea id="q4" name="43" rows="4"></textarea>
+            </div>
+        </div>    
+     </form>
+    </div>
 
-            <button class="g-recaptcha" 
-            data-sitekey="reCAPTCHA_site_key" 
-            data-callback='onSubmit' 
-            data-action='submit'>Submit</button>
+    <div class="container" id="professional">
+        <h2>Contact</h2>
+        <form action="mailto:wesley.lunnen@gmail.com" method="post" enctype="text/plain">
 
-        </form>
+            <div class="question">
+                <label for="q1">1. What are your goals with software development?</label>
+            </br>
+                <textarea id="q1" name="43" rows="4"></textarea>
+            </div>
+            </br>
+
+            <div class="question">
+                <label for="q2">2. In what ways are the projects we work on in line with the kinds of projects you want to be working on?</label>
+            </br>
+                <textarea id="q2" name="43" rows="4"></textarea>
+            </div>
+            </br>
+
+            <div class="question">
+                <label for="q3">3. Why aren't you starting your own company?</label>
+            </br>
+                <textarea id="q3" name="43" rows="4"></textarea>
+            </div>
+            </br>
+
+            <div class="question">
+                <label for="q4">4. Anything else you'd like me to know?</label>
+            </br>
+                <textarea id="q4" name="43" rows="4"></textarea>
+            </div>
+        </div>    
+     </form>
     </div>
 </body>
     
