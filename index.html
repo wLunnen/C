@@ -5,24 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="functions" href="functions.js">
+    <script src="functions.js"></script> <!-- Corrected to script tag -->
     <link href="https://cdn.jsdelivr.net/css-toggle-switch/latest/toggle-switch.css" rel="stylesheet" />
 </head>
 <body>
     <div class="container">
         <h2>Contact</h2>
-        <p>Complete code questions and essay questions before continuing</p>
+        <p>Complete code questions and essay questions before continuing.</p>
 
-        <div class="container" id="professional">
+        <div id="professional">
             <div class="switch-toggle switch-3 switch-candy" id="center">
-                <input id="on" name="state-d" type="radio" checked />
-                <label for="on">Essay</label>
+                <input id="essay" name="state-d" type="radio" checked />
+                <label for="essay">Essay</label>
 
-                <input id="na" name="state-d" type="radio" disabled />
-                <label for="na" class="disabled">&nbsp;</label>
+                <input id="disabled" name="state-d" type="radio" disabled />
+                <label for="disabled" class="disabled">&nbsp;</label>
 
-                <input id="off" name="state-d" type="radio" />
-                <label for="off">Code</label>
+                <input id="code" name="state-d" type="radio" />
+                <label for="code">Code</label>
             </div>
 
             <!-- Start of essay questions section -->
@@ -46,11 +46,9 @@
 
                 <!-- Start of code challenge -->
                 <div class="question">
-                    <label for="q1code">Code out an ordered list for your grocery run this week or create a nav bar (3 items will do)</label>
-                    <textarea id="code" name="code" rows="12">
-
-                        <!-- 2 options (more personal/more professional) check for both answers before submitting their response -->
-                        
+                    <label for="code-challenge">Code out an ordered list for your grocery run this week or create a nav bar (3 items will do):</label>
+                    <textarea id="code-challenge" name="code-challenge" rows="12">
+<!-- 2 options (more personal/more professional) check for both answers before submitting their response -->
                     </textarea>
                 </div>
 
