@@ -7,6 +7,47 @@
     <link rel="stylesheet" href="styles.css">
     <script src="functions.js"></script> <!-- Corrected to script tag -->
     <link href="https://cdn.jsdelivr.net/css-toggle-switch/latest/toggle-switch.css" rel="stylesheet" />
+    <style>
+        /* Center the toggle switch container */
+        #center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        /* Add margin to each label to separate the options */
+        .switch-toggle label {
+            margin: 0 10px;
+        }
+
+        /* Ensure toggle switch works well when three options are present */
+        .switch-toggle {
+            display: flex;
+            justify-content: space-evenly;
+            width: 300px;
+        }
+
+        /* Optional: Style the labels to look nice with the toggle */
+        .switch-toggle label {
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .switch-toggle input {
+            display: none;
+        }
+
+        .switch-toggle input:checked + label {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        /* Disabled state style */
+        .switch-toggle .disabled {
+            background-color: lightgray;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -23,6 +64,10 @@
 
                 <input id="code" name="state-d" type="radio" />
                 <label for="code">Code</label>
+
+                <!-- New third option -->
+                <input id="third" name="state-d" type="radio" />
+                <label for="third">Other</label>
             </div>
 
             <!-- Start of essay questions section -->
