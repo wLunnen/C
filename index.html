@@ -5,80 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="functions.js"></script> <!-- Corrected to script tag -->
+    <script src="functions.js"></script> <!-- External JS -->
     <link href="https://cdn.jsdelivr.net/css-toggle-switch/latest/toggle-switch.css" rel="stylesheet" />
-    <style>
-        /* Center the toggle switch container */
-        #center {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 20px 0;
-        }
-
-        /* Add margin to each label to separate the options */
-        .switch-toggle label {
-            margin: 0 10px;
-        }
-
-        /* Ensure toggle switch works well when three options are present */
-        .switch-toggle {
-            display: flex;
-            justify-content: space-evenly;
-            width: 300px;
-        }
-
-        /* Optional: Style the labels to look nice with the toggle */
-        .switch-toggle label {
-            cursor: pointer;
-            padding: 10px;
-        }
-
-        .switch-toggle input {
-            display: none;
-        }
-
-        .switch-toggle input:checked + label {
-            background-color: #4CAF50;
-            color: white;
-        }
-
-        /* Disabled state style */
-        .switch-toggle .disabled {
-            background-color: lightgray;
-        }
-    </style>
 </head>
 <body>
-    <div class="container" style="margin: auto;">
+    <div class="container">
         <h2>Contact</h2>
-        <p>Complete code question and ice breakers before submitting your resume.</p>
+        <p>Complete the code questions and ice breakers before submitting your resume.</p>
 
-        <center>
-            <div id="professional">
-                <div class="switch-toggle switch-3 switch-candy" id="center">
-                    <input id="essay" name="state-d" type="radio" checked/>
-                    <label for="essay">Essay</label>
+        <div id="professional" class="center">
+            <div class="switch-toggle switch-3 switch-candy">
+                <input id="essay" name="state-d" type="radio" checked />
+                <label for="essay" aria-label="Essay section">Essay</label>
 
-                    <input id="code" name="state-d" type="radio" />
-                    <label for="code">Code</label>
+                <input id="code" name="state-d" type="radio" />
+                <label for="code" aria-label="Code challenge section">Code</label>
+
+                <input id="resume" name="state-d" type="radio" />
+                <label for="resume" aria-label="Resume section">Resumé</label>
+            </div>
+        </div>
+
+        <form id="contact-form" action="mailto:wesley.lunnen@gmail.com" method="post" enctype="text/plain">
             
-                    <input id="resume" name="state-d" type="radio" />
-                    <label for="standard">Resumé</label>
-                </div>
-              </div>
-         </center>
-
-        <!-- Start of essay questions section -->
-        
-        <form action="mailto:wesley.lunnen@gmail.com" method="post" enctype="text/plain">
-            <div id="essay">
+            <!-- Essay Section -->
+            <div id="essay-section">
                 <div class="question">
                     <label for="q1">1. What are your goals with software development?</label>
                     <textarea id="q1" name="q1" rows="4"></textarea>
                 </div>
                 <div class="question">
-                    <label for="q2">2. In what ways are the projects we work on in line with the kinds of projects you want to be working on?</label>
+                    <label for="q2">2. How are our projects aligned with what you want to work on?</label>
                     <textarea id="q2" name="q2" rows="4"></textarea>
                 </div>
                 <div class="question">
@@ -91,44 +48,38 @@
                 </div>
             </div>
 
-            <!-- Start of code challenge -->
-            <div id="code">
+            <!-- Code Challenge Section -->
+            <div id="code-section">
                 <div class="question">
-                    <label for="code-challenge">Code out an ordered list for your grocery run this week or create a nav bar (3 items will do):</label>
-                    <textarea id="code-challenge" name="code-challenge" rows="12">
-                    </textarea>
+                    <label for="code-challenge">Code a grocery list or create a basic nav bar:</label>
+                    <textarea id="code-challenge" name="code-challenge" rows="12"></textarea>
                 </div>
             </div>
 
-            <!-- Start of standard application form -->
-            <div id="resume">
+            <!-- Resume Section -->
+            <div id="resume-section">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
-        
-                <label for="name">Phone:</label>
+
+                <label for="phone">Phone:</label>
                 <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
-        
+
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-        
-                </br>
-        
-                <i>if applying:</i>
-        
-                </br>
-                </br>
-        
-                <label for="email">Cover Letter:</label>
-                <input type="file" id="letter" name="letter">
-        
-                <label for="email">Resume:</label>
-                <input type="file" id="resume" name="resume">
+
+                <br><i>If applying:</i><br><br>
+
+                <label for="letter">Cover Letter:</label>
+                <input type="file" id="letter" name="letter" accept=".pdf,.doc,.docx">
+
+                <label for="resume">Resume:</label>
+                <input type="file" id="resume-file" name="resume" accept=".pdf,.doc,.docx">
+
             </div>
 
             <!-- Redirect Button -->
-            <a href="https://wlunnen.github.io/C/post.html" class="submit-button">Next</a>
-            </form>
-        </div>    
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
     </div>
 
     <script src="https://www.google.com/recaptcha/api.js"></script>
