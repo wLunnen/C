@@ -12,6 +12,7 @@ body {
 
 /* Container Styles */
 .container {
+    margin: auto;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
