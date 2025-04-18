@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,6 +9,8 @@ body {
     align-items: center;
     height: 100vh;
 }
+
+/* Container Styles */
 .container {
     background-color: #fff;
     padding: 20px;
@@ -16,15 +19,21 @@ body {
     width: 100%;
     max-width: 500px;
 }
+
+/* Header Styles */
 h2 {
     text-align: center;
     color: #333;
 }
+
+/* Label Styles */
 label {
     display: block;
     margin-bottom: 8px;
     color: #333;
 }
+
+/* Input and Textarea Styles */
 input, textarea {
     width: 95%;
     padding: 10px;
@@ -33,6 +42,8 @@ input, textarea {
     border-radius: 5px;
     font-size: 16px;
 }
+
+/* Submit Button Styles */
 input[type="submit"] {
     background-color: #65040e;
     color: #fff;
@@ -40,13 +51,50 @@ input[type="submit"] {
     cursor: pointer;
     font-size: 16px;
 }
+
 input[type="submit"]:hover {
     background-color: #5A030C;
 }
-.switch-toggle {
-  width: 10em;
+
+/* Centering Styles */
+#center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
 }
 
+/* Switch Toggle Styles */
+.switch-toggle {
+    width: 10em;
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+}
+
+.switch-toggle label {
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+/* Switch Toggle Input (Hidden) */
+.switch-toggle input {
+    display: none;
+}
+
+/* Switch Toggle Checked State */
+.switch-toggle input:checked + label {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Disabled State for Switch */
+.switch-toggle .disabled {
+    background-color: lightgray;
+}
+
+/* Switch Toggle Label (Non-disabled) */
 .switch-toggle label:not(.disabled) {
-  cursor: pointer;
+    cursor: pointer;
 }
