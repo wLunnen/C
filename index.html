@@ -54,75 +54,77 @@
         <h2>Contact</h2>
         <p>Complete code question and ice breakers before submitting your resume.</p>
 
-        <div id="professional">
-            <div class="switch-toggle switch-3 switch-candy" id="center">
-                <input id="essay" name="state-d" type="radio" checked />
-                <label for="essay">Essay</label>
-        
-                <!-- Disabled input, not visible or selectable, no label required -->
-                <input id="disabled" name="state-d" type="radio" disabled hidden />
-                
-                <input id="code" name="state-d" type="radio" />
-                <label for="code">Code</label>
-        
-                <input id="third" name="state-d" type="radio" />
-                <label for="third">Resumé</label>
+        <center>
+            <div id="professional">
+                <div class="switch-toggle switch-3 switch-candy" id="center">
+                    <!-- Disabled input, not visible or selectable, no label required -->
+                    <input id="disabled" name="state-d" type="radio" disabled hidden />
+                    
+                    <input id="essay" name="state-d" type="radio" checked />
+                    <label for="essay">Essay</label>
+            
+                    <input id="standard" name="state-d" type="radio" />
+                    <label for="standard">Resumé</label>
+                    
+                    <input id="code" name="state-d" type="radio" />
+                    <label for="code">Code</label>
+                </div>
+              </div>
+         </center>
+
+        <!-- Start of essay questions section -->
+        <form action="mailto:wesley.lunnen@gmail.com" method="post" enctype="text/plain">
+            <div class="question">
+                <label for="q1">1. What are your goals with software development?</label>
+                <textarea id="q1" name="q1" rows="4"></textarea>
             </div>
-          </div>
+            <div class="question">
+                <label for="q2">2. In what ways are the projects we work on in line with the kinds of projects you want to be working on?</label>
+                <textarea id="q2" name="q2" rows="4"></textarea>
+            </div>
+            <div class="question">
+                <label for="q3">3. Why aren't you starting your own company?</label>
+                <textarea id="q3" name="q3" rows="4"></textarea>
+            </div>
+            <div class="question">
+                <label for="q4">4. Anything else you'd like me to know?</label>
+                <textarea id="q4" name="q4" rows="4"></textarea>
+            </div>
 
-            <!-- Start of essay questions section -->
-            <form action="mailto:wesley.lunnen@gmail.com" method="post" enctype="text/plain">
-                <div class="question">
-                    <label for="q1">1. What are your goals with software development?</label>
-                    <textarea id="q1" name="q1" rows="4"></textarea>
-                </div>
-                <div class="question">
-                    <label for="q2">2. In what ways are the projects we work on in line with the kinds of projects you want to be working on?</label>
-                    <textarea id="q2" name="q2" rows="4"></textarea>
-                </div>
-                <div class="question">
-                    <label for="q3">3. Why aren't you starting your own company?</label>
-                    <textarea id="q3" name="q3" rows="4"></textarea>
-                </div>
-                <div class="question">
-                    <label for="q4">4. Anything else you'd like me to know?</label>
-                    <textarea id="q4" name="q4" rows="4"></textarea>
-                </div>
+            <!-- Start of code challenge -->
+            <div class="question">
+                <label for="code-challenge">Code out an ordered list for your grocery run this week or create a nav bar (3 items will do):</label>
+                <textarea id="code-challenge" name="code-challenge" rows="12">
+                </textarea>
+            </div>
 
-                <!-- Start of code challenge -->
-                <div class="question">
-                    <label for="code-challenge">Code out an ordered list for your grocery run this week or create a nav bar (3 items will do):</label>
-                    <textarea id="code-challenge" name="code-challenge" rows="12">
-                    </textarea>
-                </div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="name">Phone:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            </br>
+    
+            <i>if applying:</i>
+    
+            </br>
+            </br>
+    
+            <label for="email">Cover Letter:</label>
+            <input type="file" id="letter" name="letter">
+    
+            <label for="email">Resume:</label>
+            <input type="file" id="resume" name="resume">
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5"></textarea>
-                
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-        
-                <label for="name">Phone:</label>
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
-        
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-        
-                </br>
-        
-                <i>if applying:</i>
-        
-                </br>
-                </br>
-        
-                <label for="email">Cover Letter:</label>
-                <input type="file" id="letter" name="letter">
-        
-                <label for="email">Resume:</label>
-                <input type="file" id="resume" name="resume">
-
-                <!-- Redirect Button -->
-                <a href="https://wlunnen.github.io/C/post.html" class="submit-button">Next</a>
+            <!-- Redirect Button -->
+            <a href="https://wlunnen.github.io/C/post.html" class="submit-button">Next</a>
             </form>
         </div>    
     </div>
